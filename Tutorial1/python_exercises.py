@@ -6,12 +6,22 @@ def is_odd(x):
     """
     returns True if x is odd and False otherwise
     """
+    if (x % 2 == 0):
+        print("False")
+    else:
+        print("True")
 
 
 def is_palindrome(word):
     """
     returns whether `word` is spelled the same forwards and backwards
     """
+    revWord = reversed(word)
+
+    if list(word) == list(revWord):
+        print("Word is palindrome")
+    else:
+        print("Word not palindrome")
 
 
 def only_odds(numlist):
@@ -35,3 +45,4 @@ def count_words(text):
         {'how': 1, 'much': 1, 'wood': 1, 'would': 1, 'a': 2, 'woodchuck': 2,
         'chuck': 2, 'if': 1, 'could': 1, 'wood?': 1}
     """
+    
